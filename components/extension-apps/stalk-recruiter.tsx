@@ -123,7 +123,7 @@ export function StalkRecruiterApp({ onClose }: StalkRecruiterAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-y-auto">
           {!isScanning && recruiters.length === 0 && (
             <div className="text-center">
               <div className="text-6xl mb-6">🕵️‍♀️</div>

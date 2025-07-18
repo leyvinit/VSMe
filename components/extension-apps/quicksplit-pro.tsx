@@ -96,7 +96,7 @@ export function QuickSplitProApp({ onClose }: QuickSplitProAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-y-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">AI-Powered Budget Roaster</h2>
             <p className="text-white/80">Your spending habits, brutally analyzed</p>

@@ -175,7 +175,7 @@ export function BugWhispererApp({ onClose }: BugWhispererAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6 overflow-auto">
+        <div className="flex-1 p-6 overflow-y-auto">
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 max-w-md mx-auto mb-8">
             <div className="text-center">

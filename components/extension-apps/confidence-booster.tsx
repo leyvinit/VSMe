@@ -110,7 +110,7 @@ export function ConfidenceBoosterApp({ onClose }: ConfidenceBoosterAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-y-auto">
           {/* Confidence Meter */}
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-white mb-4">Confidence Level</h2>

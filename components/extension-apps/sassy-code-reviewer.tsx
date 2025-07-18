@@ -15,11 +15,11 @@ export function SassyCodeReviewerApp({ onClose }: SassyCodeReviewerAppProps) {
   const [coffeeLevel, setCoffeeLevel] = useState(2)
 
   const sampleCode = `function calculateTotal(items) {
-  var total = 0;
-  for (var i = 0; i < items.length; i++) {
-    total = total + items[i].price;
-  }
-  return total;
+var total = 0;
+for (var i = 0; i < items.length; i++) {
+  total = total + items[i].price;
+}
+return total;
 }`
 
   const sassyComments = {
@@ -154,7 +154,7 @@ export function SassyCodeReviewerApp({ onClose }: SassyCodeReviewerAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6 overflow-auto">
+        <div className="flex-1 p-6 overflow-y-auto">
           {/* Controls */}
           <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
             <div>

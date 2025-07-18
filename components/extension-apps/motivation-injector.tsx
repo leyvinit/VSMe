@@ -122,7 +122,7 @@ export function MotivationInjectorApp({ onClose }: MotivationInjectorAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-y-auto">
           {/* Motivation Level Display */}
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">{getMoodEmoji()}</div>

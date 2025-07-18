@@ -90,7 +90,7 @@ export function DebugSnacksApp({ onClose }: DebugSnacksAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-y-auto">
           <div className="text-center mb-6">
             <div className="flex items-center justify-center space-x-4 mb-4">
               <Clock size={24} className="text-white" />

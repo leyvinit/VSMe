@@ -44,69 +44,69 @@ export function CodeEditor({ fileName, currentTheme = "night-owl", onRunCode }: 
       case "about-me.js":
         return `// Personal Information & Background
 const aboutMe = {
-  name: "Hanan Abdullahi",
-  title: "Software Engineering Student",
-  location: "Istanbul, Turkey",
-  university: "Haliç University",
-  graduation: "May 2026",
-  
-  languages: ["English", "Arabic", "Somali"],
-  
-  personality: {
-    traits: ["Problem solver", "Team player", "Quick learner"],
-    workStyle: "Collaborative and detail-oriented",
-    motto: "Building solutions that matter"
-  },
-  
-  interests: [
-    "Full-stack development",
-    "User experience design", 
-    "Clean code practices",
-    "Tech innovation"
-  ],
-  
-  currentFocus: [
-    "Advanced React patterns",
-    "System design principles",
-    "Cloud architecture"
-  ],
-  
-  funFacts: [
-    "Speaks 3 languages fluently",
-    "Loves debugging complex problems",
-    "Coffee-powered coding sessions",
-    "Always eager to learn new technologies"
-  ]
+name: "Hanan Abdullahi",
+title: "Software Engineering Student",
+location: "Istanbul, Turkey",
+university: "Haliç University",
+graduation: "May 2026",
+
+languages: ["English", "Arabic", "Somali"],
+
+personality: {
+  traits: ["Problem solver", "Team player", "Quick learner"],
+  workStyle: "Collaborative and detail-oriented",
+  motto: "Building solutions that matter"
+},
+
+interests: [
+  "Full-stack development",
+  "User experience design", 
+  "Clean code practices",
+  "Tech innovation"
+],
+
+currentFocus: [
+  "Advanced React patterns",
+  "System design principles",
+  "Cloud architecture"
+],
+
+funFacts: [
+  "Speaks 3 languages fluently",
+  "Loves debugging complex problems",
+  "Coffee-powered coding sessions",
+  "Always eager to learn new technologies"
+]
 };
 
 function displayAboutMe() {
-  console.log("=== ABOUT HANAN ABDULLAHI ===");
-  console.log("");
-  
-  console.log(\`👋 Hi! I'm \${aboutMe.name}\`);
-  console.log(\`🎓 \${aboutMe.title} at \${aboutMe.university}\`);
-  console.log(\`📍 Based in \${aboutMe.location}\`);
-  console.log(\`🎯 Graduating \${aboutMe.graduation}\`);
-  console.log("");
-  
-  console.log("🗣️ Languages I speak:");
-  aboutMe.languages.forEach(lang => console.log(\`   • \${lang}\`));
-  
-  console.log("");
-  console.log("✨ Personality & Work Style:");
-  aboutMe.personality.traits.forEach(trait => console.log(\`   • \${trait}\`));
-  console.log(\`   • Work Style: \${aboutMe.personality.workStyle}\`);
-  console.log(\`   • Motto: "\${aboutMe.personality.motto}"\`);
-  console.log("");
-  
-  console.log("🚀 Current Focus Areas:");
-  aboutMe.currentFocus.forEach(focus => console.log(\`   • \${focus}\`));
-  
-  console.log("");
-  console.log("🎉 Fun Facts:");
-  aboutMe.funFacts.forEach(fact => console.log(\`   • \${fact}\`));
-  
-  return "Profile loaded successfully! Ready to make an impact! 🌟";
+console.log("=== ABOUT HANAN ABDULLAHI ===");
+console.log("");
+
+console.log(\`👋 Hi! I'm \${aboutMe.name}\`);
+console.log(\`🎓 \${aboutMe.title} at \${aboutMe.university}\`);
+console.log(\`📍 Based in \${aboutMe.location}\`);
+console.log(\`🎯 Graduating \${aboutMe.graduation}\`);
+console.log("");
+
+console.log("🗣️ Languages I speak:");
+aboutMe.languages.forEach(lang => console.log(\`   • \${lang}\`));
+
+console.log("");
+console.log("✨ Personality & Work Style:");
+aboutMe.personality.traits.forEach(trait => console.log(\`   • \${trait}\`));
+console.log(\`   • Work Style: \${aboutMe.personality.workStyle}\`);
+console.log(\`   • Motto: "\${aboutMe.personality.motto}"\`);
+console.log("");
+
+console.log("🚀 Current Focus Areas:");
+aboutMe.currentFocus.forEach(focus => console.log(\`   • \${focus}\`));
+
+console.log("");
+console.log("🎉 Fun Facts:");
+aboutMe.funFacts.forEach(fact => console.log(\`   • \${fact}\`));
+
+return "Profile loaded successfully! Ready to make an impact! 🌟";
 }
 
 displayAboutMe();`
@@ -114,133 +114,133 @@ displayAboutMe();`
       case "projects.js":
         return `// Project Portfolio & Achievements
 const projects = [
-  {
-    id: 1,
-    name: "FoodShare",
-    status: "In Progress",
-    technologies: ["Next.js", "Tailwind CSS"],
-    description: "Food waste reduction platform connecting donors with communities",
-    features: [
-      "Food listing and donation system",
-      "Interactive map integration",
-      "User authentication and profiles",
-      "Real-time pickup scheduling"
-    ],
-    impact: "Reducing food waste while helping local communities",
-    demoUrl: "https://foodsharehan.vercel.app/",
-    learnings: "First experience with Next.js and social impact development"
-  },
-  
-  {
-    id: 2,
-    name: "Anime Quiz App",
-    status: "Completed",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Interactive anime knowledge quiz with dynamic questions",
-    features: [
-      "Dynamic question generation",
-      "Score tracking system",
-      "Interactive UI feedback",
-      "Responsive design"
-    ],
-    demoUrl: "https://quiz-app-puce-eta-87.vercel.app/",
-    githubUrl: "https://github.com/leyvinit/quiz-app",
-    learnings: "Mastering vanilla JavaScript and DOM manipulation"
-  },
-  
-  {
-    id: 3,
-    name: "Weather View App",
-    status: "Completed",
-    technologies: ["React.js", "Tailwind CSS", "OpenWeather API"],
-    description: "Real-time weather application with location-based forecasts",
-    features: [
-      "Real-time weather data",
-      "Location-based search",
-      "5-day forecast display",
-      "Responsive mobile design"
-    ],
-    demoUrl: "https://weather-view-chi.vercel.app/",
-    githubUrl: "https://github.com/leyvinit/weather-view",
-    learnings: "Learning React.js and API integration patterns"
-  },
-  
-  {
-    id: 4,
-    name: "Calculator App",
-    status: "Completed",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Feature-rich calculator built with vanilla JavaScript",
-    features: [
-      "Basic arithmetic operations",
-      "Memory functions",
-      "Keyboard input support",
-      "Clean, intuitive interface"
-    ],
-    demoUrl: "https://calculator-app-dun-delta.vercel.app/",
-    githubUrl: "https://github.com/leyvinit/calculator-app",
-    learnings: "Strengthening JavaScript fundamentals and mathematical logic"
-  },
-  
-  {
-    id: 5,
-    name: "Transportation Vehicle Management System",
-    status: "Completed",
-    technologies: ["React.js", "Tailwind CSS"],
-    description: "Comprehensive vehicle management system mockup with analysis",
-    features: [
-      "Use case diagrams",
-      "Entity-relationship diagrams",
-      "Gantt chart planning",
-      "Interactive mockup screens"
-    ],
-    githubUrl: "https://github.com/leyvinit/transportation_system_mockup",
-    learnings: "Understanding software requirements analysis and system design"
-  }
+{
+  id: 1,
+  name: "FoodShare",
+  status: "In Progress",
+  technologies: ["Next.js", "Tailwind CSS"],
+  description: "Food waste reduction platform connecting donors with communities",
+  features: [
+    "Food listing and donation system",
+    "Interactive map integration",
+    "User authentication and profiles",
+    "Real-time pickup scheduling"
+  ],
+  impact: "Reducing food waste while helping local communities",
+  demoUrl: "https://foodsharehan.vercel.app/",
+  learnings: "First experience with Next.js and social impact development"
+},
+
+{
+  id: 2,
+  name: "Anime Quiz App",
+  status: "Completed",
+  technologies: ["HTML", "CSS", "JavaScript"],
+  description: "Interactive anime knowledge quiz with dynamic questions",
+  features: [
+    "Dynamic question generation",
+    "Score tracking system",
+    "Interactive UI feedback",
+    "Responsive design"
+  ],
+  demoUrl: "https://quiz-app-puce-eta-87.vercel.app/",
+  githubUrl: "https://github.com/leyvinit/quiz-app",
+  learnings: "Mastering vanilla JavaScript and DOM manipulation"
+},
+
+{
+  id: 3,
+  name: "Weather View App",
+  status: "Completed",
+  technologies: ["React.js", "Tailwind CSS", "OpenWeather API"],
+  description: "Real-time weather application with location-based forecasts",
+  features: [
+    "Real-time weather data",
+    "Location-based search",
+    "5-day forecast display",
+    "Responsive mobile design"
+  ],
+  demoUrl: "https://weather-view-chi.vercel.app/",
+  githubUrl: "https://github.com/leyvinit/weather-view",
+  learnings: "Learning React.js and API integration patterns"
+},
+
+{
+  id: 4,
+  name: "Calculator App",
+  status: "Completed",
+  technologies: ["HTML", "CSS", "JavaScript"],
+  description: "Feature-rich calculator built with vanilla JavaScript",
+  features: [
+    "Basic arithmetic operations",
+    "Memory functions",
+    "Keyboard input support",
+    "Clean, intuitive interface"
+  ],
+  demoUrl: "https://calculator-app-dun-delta.vercel.app/",
+  githubUrl: "https://github.com/leyvinit/calculator-app",
+  learnings: "Strengthening JavaScript fundamentals and mathematical logic"
+},
+
+{
+  id: 5,
+  name: "Transportation Vehicle Management System",
+  status: "Completed",
+  technologies: ["React.js", "Tailwind CSS"],
+  description: "Comprehensive vehicle management system mockup with analysis",
+  features: [
+    "Use case diagrams",
+    "Entity-relationship diagrams",
+    "Gantt chart planning",
+    "Interactive mockup screens"
+  ],
+  githubUrl: "https://github.com/leyvinit/transportation_system_mockup",
+  learnings: "Understanding software requirements analysis and system design"
+}
 ];
 
 function analyzeProjects() {
-  const stats = {
-    total: projects.length,
-    completed: projects.filter(p => p.status === "Completed").length,
-    inProgress: projects.filter(p => p.status === "In Progress").length,
-    technologies: [...new Set(projects.flatMap(p => p.technologies))]
-  };
+const stats = {
+  total: projects.length,
+  completed: projects.filter(p => p.status === "Completed").length,
+  inProgress: projects.filter(p => p.status === "In Progress").length,
+  technologies: [...new Set(projects.flatMap(p => p.technologies))]
+};
+
+console.log("=== PROJECT PORTFOLIO ===");
+console.log("");
+
+console.log("📊 Portfolio Statistics:");
+console.log(\`   • Total Projects: \${stats.total}\`);
+console.log(\`   • Completed: \${stats.completed}\`);
+console.log(\`   • In Progress: \${stats.inProgress}\`);
+console.log("");
+
+console.log("🛠️ Technologies Used:");
+stats.technologies.forEach(tech => console.log(\`   • \${tech}\`));
+console.log("");
+
+console.log("🚀 Featured Projects:");
+console.log("");
+
+projects.forEach((project, index) => {
+  console.log(\`\${index + 1}. \${project.name} [\${project.status}]\`);
+  console.log(\`   📝 \${project.description}\`);
+  console.log(\`   🔧 Tech Stack: \${project.technologies.join(", ")}\`);
   
-  console.log("=== PROJECT PORTFOLIO ===");
+  if (project.demoUrl) {
+    console.log(\`   🌐 Demo: \${project.demoUrl}\`);
+  }
+  
+  if (project.githubUrl) {
+    console.log(\`   📂 Code: \${project.githubUrl}\`);
+  }
+  
+  console.log(\`   📚 Learning: \${project.learnings}\`);
   console.log("");
-  
-  console.log("📊 Portfolio Statistics:");
-  console.log(\`   • Total Projects: \${stats.total}\`);
-  console.log(\`   • Completed: \${stats.completed}\`);
-  console.log(\`   • In Progress: \${stats.inProgress}\`);
-  console.log("");
-  
-  console.log("🛠️ Technologies Used:");
-  stats.technologies.forEach(tech => console.log(\`   • \${tech}\`));
-  console.log("");
-  
-  console.log("🚀 Featured Projects:");
-  console.log("");
-  
-  projects.forEach((project, index) => {
-    console.log(\`\${index + 1}. \${project.name} [\${project.status}]\`);
-    console.log(\`   📝 \${project.description}\`);
-    console.log(\`   🔧 Tech Stack: \${project.technologies.join(", ")}\`);
-    
-    if (project.demoUrl) {
-      console.log(\`   🌐 Demo: \${project.demoUrl}\`);
-    }
-    
-    if (project.githubUrl) {
-      console.log(\`   📂 Code: \${project.githubUrl}\`);
-    }
-    
-    console.log(\`   📚 Learning: \${project.learnings}\`);
-    console.log("");
-  });
-  
-  return "All projects loaded! Ready to discuss any of them! 💼";
+});
+
+return "All projects loaded! Ready to discuss any of them! 💼";
 }
 
 analyzeProjects();`
@@ -248,123 +248,123 @@ analyzeProjects();`
       case "skills.js":
         return `// Technical Skills & Expertise
 const skillsMatrix = {
-  languages: {
-    proficient: [
-      { name: "JavaScript", level: 85, experience: "2+ years" },
-      { name: "Python", level: 80, experience: "2+ years" },
-      { name: "PHP", level: 75, experience: "1.5+ years" }
-    ],
-    familiar: [
-      { name: "Java", level: 65, experience: "1 year" },
-      { name: "C", level: 60, experience: "1 year" }
-    ],
-    learning: [
-      { name: "TypeScript", level: 70, experience: "6 months" },
-      { name: "Go", level: 40, experience: "Learning" }
-    ]
-  },
-  
-  frontend: {
-    frameworks: [
-      { name: "React", level: 85, projects: 4 },
-      { name: "HTML5", level: 90, projects: 8 },
-      { name: "CSS3", level: 85, projects: 8 }
-    ],
-    styling: [
-      { name: "Tailwind CSS", level: 80, projects: 3 },
-      { name: "Bootstrap", level: 75, projects: 2 }
-    ],
-    tools: ["Webpack", "Vite", "npm", "Figma"]
-  },
-  
-  backend: {
-    languages: ["PHP", "Python", "Node.js"],
-    concepts: [
-      "REST API Development",
-      "MVC Architecture", 
-      "Database Design",
-      "Server-side Logic"
-    ]
-  },
-  
-  databases: {
-    relational: [
-      { name: "MySQL", level: 80, projects: 3 },
-      { name: "PostgreSQL", level: 70, projects: 1 }
-    ],
-    noSQL: [
-      { name: "MongoDB", level: 65, projects: 1 },
-      { name: "Firebase Firestore", level: 75, projects: 2 }
-    ]
-  },
-  
-  tools: {
-    development: ["VS Code", "IntelliJ IDEA", "Git", "GitHub"],
-    testing: ["Postman", "Browser DevTools"],
-    design: ["Figma", "Adobe XD", "Canva"]
-  }
+languages: {
+  proficient: [
+    { name: "JavaScript", level: 85, experience: "2+ years" },
+    { name: "Python", level: 80, experience: "2+ years" },
+    { name: "PHP", level: 75, experience: "1.5+ years" }
+  ],
+  familiar: [
+    { name: "Java", level: 65, experience: "1 year" },
+    { name: "C", level: 60, experience: "1 year" }
+  ],
+  learning: [
+    { name: "TypeScript", level: 70, experience: "6 months" },
+    { name: "Go", level: 40, experience: "Learning" }
+  ]
+},
+
+frontend: {
+  frameworks: [
+    { name: "React", level: 85, projects: 4 },
+    { name: "HTML5", level: 90, projects: 8 },
+    { name: "CSS3", level: 85, projects: 8 }
+  ],
+  styling: [
+    { name: "Tailwind CSS", level: 80, projects: 3 },
+    { name: "Bootstrap", level: 75, projects: 2 }
+  ],
+  tools: ["Webpack", "Vite", "npm", "Figma"]
+},
+
+backend: {
+  languages: ["PHP", "Python", "Node.js"],
+  concepts: [
+    "REST API Development",
+    "MVC Architecture", 
+    "Database Design",
+    "Server-side Logic"
+  ]
+},
+
+databases: {
+  relational: [
+    { name: "MySQL", level: 80, projects: 3 },
+    { name: "PostgreSQL", level: 70, projects: 1 }
+  ],
+  noSQL: [
+    { name: "MongoDB", level: 65, projects: 1 },
+    { name: "Firebase Firestore", level: 75, projects: 2 }
+  ]
+},
+
+tools: {
+  development: ["VS Code", "IntelliJ IDEA", "Git", "GitHub"],
+  testing: ["Postman", "Browser DevTools"],
+  design: ["Figma", "Adobe XD", "Canva"]
+}
 };
 
 function displaySkillsAssessment() {
-  console.log("=== TECHNICAL SKILLS ASSESSMENT ===");
-  console.log("");
-  
-  console.log("💻 Programming Languages:");
-  console.log("");
-  console.log("   🚀 Proficient:");
-  skillsMatrix.languages.proficient.forEach(lang => {
-    console.log(\`      • \${lang.name}: \${lang.level}% (\${lang.experience})\`);
-  });
-  
-  console.log("");
-  console.log("   📚 Familiar:");
-  skillsMatrix.languages.familiar.forEach(lang => {
-    console.log(\`      • \${lang.name}: \${lang.level}% (\${lang.experience})\`);
-  });
-  
-  console.log("");
-  console.log("   🌱 Currently Learning:");
-  skillsMatrix.languages.learning.forEach(lang => {
-    console.log(\`      • \${lang.name}: \${lang.level}% (\${lang.experience})\`);
-  });
-  
-  console.log("");
-  console.log("🎨 Frontend Development:");
-  skillsMatrix.frontend.frameworks.forEach(framework => {
-    console.log(\`   • \${framework.name}: \${framework.level}% (\${framework.projects} projects)\`);
-  });
-  
-  console.log("");
-  console.log("⚙️ Backend Development:");
-  skillsMatrix.backend.concepts.forEach(concept => {
-    console.log(\`   • \${concept}\`);
-  });
-  
-  console.log("");
-  console.log("🗄️ Database Technologies:");
-  console.log("   SQL Databases:");
-  skillsMatrix.databases.relational.forEach(db => {
-    console.log(\`      • \${db.name}: \${db.level}%\`);
-  });
-  console.log("   NoSQL Databases:");
-  skillsMatrix.databases.noSQL.forEach(db => {
-    console.log(\`      • \${db.name}: \${db.level}%\`);
-  });
-  
-  console.log("");
-  console.log("🛠️ Development Tools:");
-  console.log(\`   • Development: \${skillsMatrix.tools.development.join(", ")}\`);
-  console.log(\`   • Testing: \${skillsMatrix.tools.testing.join(", ")}\`);
-  console.log(\`   • Design: \${skillsMatrix.tools.design.join(", ")}\`);
-  
-  const allSkills = skillsMatrix.languages.proficient.concat(skillsMatrix.languages.familiar);
-  const averageLevel = allSkills.reduce((sum, skill) => sum + skill.level, 0) / allSkills.length;
-  
-  console.log("");
-  console.log(\`📊 Overall Skill Level: \${Math.round(averageLevel)}%\`);
-  console.log("🎯 Status: Ready for professional development opportunities!");
-  
-  return "Skills assessment complete! Ready to put them to work! 💪";
+console.log("=== TECHNICAL SKILLS ASSESSMENT ===");
+console.log("");
+
+console.log("💻 Programming Languages:");
+console.log("");
+console.log("   🚀 Proficient:");
+skillsMatrix.languages.proficient.forEach(lang => {
+  console.log(\`      • \${lang.name}: \${lang.level}% (\${lang.experience})\`);
+});
+
+console.log("");
+console.log("   📚 Familiar:");
+skillsMatrix.languages.familiar.forEach(lang => {
+  console.log(\`      • \${lang.name}: \${lang.level}% (\${lang.experience})\`);
+});
+
+console.log("");
+console.log("   🌱 Currently Learning:");
+skillsMatrix.languages.learning.forEach(lang => {
+  console.log(\`      • \${lang.name}: \${lang.level}% (\${lang.experience})\`);
+});
+
+console.log("");
+console.log("🎨 Frontend Development:");
+skillsMatrix.frontend.frameworks.forEach(framework => {
+  console.log(\`   • \${framework.name}: \${framework.level}% (\${framework.projects} projects)\`);
+});
+
+console.log("");
+console.log("⚙️ Backend Development:");
+skillsMatrix.backend.concepts.forEach(concept => {
+  console.log(\`   • \${concept}\`);
+});
+
+console.log("");
+console.log("🗄️ Database Technologies:");
+console.log("   SQL Databases:");
+skillsMatrix.databases.relational.forEach(db => {
+  console.log(\`      • \${db.name}: \${db.level}%\`);
+});
+console.log("   NoSQL Databases:");
+skillsMatrix.databases.noSQL.forEach(db => {
+  console.log(\`      • \${db.name}: \${db.level}%\`);
+});
+
+console.log("");
+console.log("🛠️ Development Tools:");
+console.log(\`   • Development: \${skillsMatrix.tools.development.join(", ")}\`);
+console.log(\`   • Testing: \${skillsMatrix.tools.testing.join(", ")}\`);
+console.log(\`   • Design: \${skillsMatrix.tools.design.join(", ")}\`);
+
+const allSkills = skillsMatrix.languages.proficient.concat(skillsMatrix.languages.familiar);
+const averageLevel = allSkills.reduce((sum, skill) => sum + skill.level, 0) / allSkills.length;
+
+console.log("");
+console.log(\`📊 Overall Skill Level: \${Math.round(averageLevel)}%\`);
+console.log("🎯 Status: Ready for professional development opportunities!");
+
+return "Skills assessment complete! Ready to put them to work! 💪";
 }
 
 displaySkillsAssessment();`
@@ -372,121 +372,121 @@ displaySkillsAssessment();`
       case "contact.js":
         return `// Contact Information & Professional Links
 const contactInfo = {
-  personal: {
-    name: "Hanan Abdullahi",
-    email: "nakohoka25@gmail.com",
-    phone: "+90 538 522 0604",
-    location: {
-      city: "Başakşehir",
-      province: "Istanbul",
-      country: "Turkey",
-      timezone: "Turkey Time (TRT, UTC+3)"
-    }
-  },
-  
-  professional: {
-    linkedIn: {
-      url: "https://linkedin.com/in/hananabdulahi",
-      description: "Professional network and career updates"
-    },
-    github: {
-      url: "https://github.com/leyvinit", 
-      description: "Code repositories and project showcases"
-    },
-    portfolio: {
-      description: "Interactive VS Code portfolio experience"
-    }
-  },
-  
-  availability: {
-    status: "Actively seeking opportunities",
-    responseTime: "Within 24 hours",
-    preferredContact: "Email for formal inquiries, LinkedIn for networking"
-  },
-  
-  opportunities: {
-    primary: [
-      "Software Engineering Internships",
-      "Junior Developer Positions", 
-      "Frontend Development Roles",
-      "Full-stack Development Opportunities"
-    ],
-    interests: [
-      "Technology startups",
-      "E-commerce platforms",
-      "Educational technology", 
-      "Social impact applications"
-    ]
-  },
-  
-  communication: {
-    languages: ["English", "Arabic", "Somali"],
-    strengths: [
-      "Clear technical communication",
-      "Active listening",
-      "Cross-cultural collaboration",
-      "Problem-solving discussions"
-    ]
+personal: {
+  name: "Hanan Abdullahi",
+  email: "nakohoka25@gmail.com",
+  phone: "+90 538 522 0604",
+  location: {
+    city: "Başakşehir",
+    province: "Istanbul",
+    country: "Turkey",
+    timezone: "Turkey Time (TRT, UTC+3)"
   }
+},
+
+professional: {
+  linkedIn: {
+    url: "https://linkedin.com/in/hananabdulahi",
+    description: "Professional network and career updates"
+  },
+  github: {
+    url: "https://github.com/leyvinit", 
+    description: "Code repositories and project showcases"
+  },
+  portfolio: {
+    description: "Interactive VS Code portfolio experience"
+  }
+},
+
+availability: {
+  status: "Actively seeking opportunities",
+  responseTime: "Within 24 hours",
+  preferredContact: "Email for formal inquiries, LinkedIn for networking"
+},
+
+opportunities: {
+  primary: [
+    "Software Engineering Internships",
+    "Junior Developer Positions", 
+    "Frontend Development Roles",
+    "Full-stack Development Opportunities"
+  ],
+  interests: [
+    "Technology startups",
+    "E-commerce platforms",
+    "Educational technology", 
+    "Social impact applications"
+  ]
+},
+
+communication: {
+  languages: ["English", "Arabic", "Somali"],
+  strengths: [
+    "Clear technical communication",
+    "Active listening",
+    "Cross-cultural collaboration",
+    "Problem-solving discussions"
+  ]
+}
 };
 
 function displayContactInfo() {
-  console.log("=== CONTACT INFORMATION ===");
-  console.log("");
-  
-  console.log("👤 Personal Details:");
-  console.log(\`   • Name: \${contactInfo.personal.name}\`);
-  console.log(\`   • Email: \${contactInfo.personal.email}\`);
-  console.log(\`   • Phone: \${contactInfo.personal.phone}\`);
-  console.log(\`   • Location: \${contactInfo.personal.location.city}, \${contactInfo.personal.location.country}\`);
-  console.log(\`   • Timezone: \${contactInfo.personal.location.timezone}\`);
-  console.log("");
-  
-  console.log("🔗 Professional Links:");
-  console.log(\`   • LinkedIn: \${contactInfo.professional.linkedIn.url}\`);
-  console.log(\`     → \${contactInfo.professional.linkedIn.description}\`);
-  console.log(\`   • GitHub: \${contactInfo.professional.github.url}\`);
-  console.log(\`     → \${contactInfo.professional.github.description}\`);
-  console.log(\`   • Portfolio: \${contactInfo.professional.portfolio.description}\`);
-  console.log("");
-  
-  console.log("📅 Availability:");
-  console.log(\`   • Status: \${contactInfo.availability.status}\`);
-  console.log(\`   • Response Time: \${contactInfo.availability.responseTime}\`);
-  console.log(\`   • Best Contact: \${contactInfo.availability.preferredContact}\`);
-  console.log("");
-  
-  console.log("💼 Seeking Opportunities:");
-  contactInfo.opportunities.primary.forEach(opp => {
-    console.log(\`   • \${opp}\`);
-  });
-  
-  console.log("");
-  console.log("🏢 Industry Interests:");
-  contactInfo.opportunities.interests.forEach(interest => {
-    console.log(\`   • \${interest}\`);
-  });
-  
-  console.log("");
-  console.log("🗣️ Communication:");
-  console.log(\`   • Languages: \${contactInfo.communication.languages.join(", ")}\`);
-  console.log("   • Strengths:");
-  contactInfo.communication.strengths.forEach(strength => {
-    console.log(\`      • \${strength}\`);
-  });
-  
-  console.log("");
-  console.log("📋 Quick Contact Summary:");
-  console.log(\`   📧 \${contactInfo.personal.email}\`);
-  console.log(\`   📞 \${contactInfo.personal.phone}\`);
-  console.log(\`   📍 \${contactInfo.personal.location.city}, \${contactInfo.personal.location.country}\`);
-  console.log(\`   ✅ \${contactInfo.availability.status}\`);
-  console.log(\`   ⏱️ Response time: \${contactInfo.availability.responseTime}\`);
-  console.log("");
-  console.log("🎯 Ready to discuss opportunities and collaborate!");
-  console.log("Let's build something amazing together! 🚀");
-  
-  return "Contact information loaded! Ready to connect! 📞";
+console.log("=== CONTACT INFORMATION ===");
+console.log("");
+
+console.log("👤 Personal Details:");
+console.log(\`   • Name: \${contactInfo.personal.name}\`);
+console.log(\`   • Email: \${contactInfo.personal.email}\`);
+console.log(\`   • Phone: \${contactInfo.personal.phone}\`);
+console.log(\`   • Location: \${contactInfo.personal.location.city}, \${contactInfo.personal.location.country}\`);
+console.log(\`   • Timezone: \${contactInfo.personal.location.timezone}\`);
+console.log("");
+
+console.log("🔗 Professional Links:");
+console.log(\`   • LinkedIn: \${contactInfo.professional.linkedIn.url}\`);
+console.log(\`     → \${contactInfo.professional.linkedIn.description}\`);
+console.log(\`   • GitHub: \${contactInfo.professional.github.url}\`);
+console.log(\`     → \${contactInfo.professional.github.description}\`);
+console.log(\`   • Portfolio: \${contactInfo.professional.portfolio.description}\`);
+console.log("");
+
+console.log("📅 Availability:");
+console.log(\`   • Status: \${contactInfo.availability.status}\`);
+console.log(\`   • Response Time: \${contactInfo.availability.responseTime}\`);
+console.log(\`   • Best Contact: \${contactInfo.availability.preferredContact}\`);
+console.log("");
+
+console.log("💼 Seeking Opportunities:");
+contactInfo.opportunities.primary.forEach(opp => {
+  console.log(\`   • \${opp}\`);
+});
+
+console.log("");
+console.log("🏢 Industry Interests:");
+contactInfo.opportunities.interests.forEach(interest => {
+  console.log(\`   • \${interest}\`);
+});
+
+console.log("");
+console.log("🗣️ Communication:");
+console.log(\`   • Languages: \${contactInfo.communication.languages.join(", ")}\`);
+console.log("   • Strengths:");
+contactInfo.communication.strengths.forEach(strength => {
+  console.log(\`      • \${strength}\`);
+});
+
+console.log("");
+console.log("📋 Quick Contact Summary:");
+console.log(\`   📧 \${contactInfo.personal.email}\`);
+console.log(\`   📞 \${contactInfo.personal.phone}\`);
+console.log(\`   📍 \${contactInfo.personal.location.city}, \${contactInfo.personal.location.country}\`);
+console.log(\`   ✅ \${contactInfo.availability.status}\`);
+console.log(\`   ⏱️ Response time: \${contactInfo.availability.responseTime}\`);
+console.log("");
+console.log("🎯 Ready to discuss opportunities and collaborate!");
+console.log("Let's build something amazing together! 🚀");
+
+return "Contact information loaded! Ready to connect! 📞";
 }
 
 displayContactInfo();`
@@ -504,42 +504,42 @@ displayContactInfo();`
 // • Try the Konami code: ↑ ↑ ↓ ↓ ← → ← → B A
 
 const portfolio = {
-  creator: "Hanan Abdullahi",
-  purpose: "Interactive resume and project showcase",
-  technology: "React + TypeScript + Tailwind CSS", 
-  inspiration: "Visual Studio Code interface",
-  
-  features: [
-    "Syntax-highlighted code display",
-    "Interactive file explorer",
-    "Command palette functionality",
-    "Integrated terminal simulation", 
-    "Theme switching capabilities",
-    "Hidden easter eggs and surprises"
-  ],
-  
-  message: "Thanks for exploring my portfolio!"
+creator: "Hanan Abdullahi",
+purpose: "Interactive resume and project showcase",
+technology: "React + TypeScript + Tailwind CSS", 
+inspiration: "Visual Studio Code interface",
+
+features: [
+  "Syntax-highlighted code display",
+  "Interactive file explorer",
+  "Command palette functionality",
+  "Integrated terminal simulation", 
+  "Theme switching capabilities",
+  "Hidden easter eggs and surprises"
+],
+
+message: "Thanks for exploring my portfolio!"
 };
 
 function displayWelcome() {
-  console.log("=== WELCOME TO HANAN'S PORTFOLIO ===");
-  console.log("");
-  console.log(\`👋 Created by: \${portfolio.creator}\`);
-  console.log(\`🎯 Purpose: \${portfolio.purpose}\`);
-  console.log(\`⚙️ Built with: \${portfolio.technology}\`);
-  console.log("");
-  
-  console.log("✨ Features:");
-  portfolio.features.forEach(feature => {
-    console.log(\`   • \${feature}\`);
-  });
-  
-  console.log("");
-  console.log(\`💝 \${portfolio.message}\`);
-  console.log("");
-  console.log("🚀 Explore the files to learn more about my journey!");
-  
-  return "Portfolio loaded successfully!";
+console.log("=== WELCOME TO HANAN'S PORTFOLIO ===");
+console.log("");
+console.log(\`👋 Created by: \${portfolio.creator}\`);
+console.log(\`🎯 Purpose: \${portfolio.purpose}\`);
+console.log(\`⚙️ Built with: \${portfolio.technology}\`);
+console.log("");
+
+console.log("✨ Features:");
+portfolio.features.forEach(feature => {
+  console.log(\`   • \${feature}\`);
+});
+
+console.log("");
+console.log(\`💝 \${portfolio.message}\`);
+console.log("");
+console.log("🚀 Explore the files to learn more about my journey!");
+
+return "Portfolio loaded successfully!";
 }
 
 displayWelcome();`
@@ -915,7 +915,7 @@ displayWelcome();`
       </div>
 
       {/* Fixed Footer */}
-      <div className="bg-[#011627] border-t border-[#1e2d3d] p-4 text-xs text-[#8892b0] sticky bottom-0">
+      <div className="bg-[#011627] border-t border-[#1e2d3d] p-6 text-xs text-[#8892b0] sticky bottom-0 z-10">
         <div className="flex justify-between items-center mb-2">
           <span>UTF-8</span>
           <span>JavaScript</span>

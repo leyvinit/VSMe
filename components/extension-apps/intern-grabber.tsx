@@ -111,7 +111,7 @@ export function InternGrabberApp({ onClose }: InternGrabberAppProps) {
           </button>
         </div>
 
-        <div className="flex-1 p-6 flex flex-col items-center justify-center">
+        <div className="flex-1 p-6 flex flex-col items-center justify-center overflow-y-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">AI-Powered Internship Hunter</h2>
             <p className="text-white/80">Scanning the entire internet for perfect matches...</p>
@@ -205,12 +205,12 @@ export function InternGrabberApp({ onClose }: InternGrabberAppProps) {
       </div>
 
       <style jsx>{`
-        @keyframes shake {
-          0%, 100% { transform: translateX(0); }
-          25% { transform: translateX(-5px); }
-          75% { transform: translateX(5px); }
-        }
-      `}</style>
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+      }
+    `}</style>
     </div>
   )
 }
