@@ -8,6 +8,8 @@ import { CommandPalette } from "@/components/command-palette"
 import { Terminal } from "@/components/terminal"
 import { ExtensionsPanel } from "@/components/extensions-panel"
 import { ProjectsPanel } from "@/components/projects-panel"
+import { MobileWarning } from "@/components/mobile-warning"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function VSCodePortfolio() {
   const [activeFile, setActiveFile] = useState<string>("about-me.js")
@@ -20,6 +22,9 @@ export default function VSCodePortfolio() {
   const [konamiSequence, setKonamiSequence] = useState<string[]>([])
   const [showEasterEgg, setShowEasterEgg] = useState(false)
   const [terminalOutput, setTerminalOutput] = useState<string[]>([])
+  const [showMobileWarning, setShowMobileWarning] = useState(false)
+
+  const isMobile = useIsMobile()
 
   const konamiCode = [
     "ArrowUp",
@@ -33,6 +38,12 @@ export default function VSCodePortfolio() {
     "KeyB",
     "KeyA",
   ]
+
+  useEffect(() => {
+    if (isMobile) {
+      setShowMobileWarning(true)
+    }
+  }, [isMobile])
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -146,6 +157,8 @@ export default function VSCodePortfolio() {
         />
       )}
 
+      {showMobileWarning && <MobileWarning onClose={() => setShowMobileWarning(false)} />}
+
       {showEasterEgg && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <div className="bg-[#011627] border border-[#7fdbca] rounded-lg p-8 text-center max-w-md">
@@ -156,7 +169,7 @@ export default function VSCodePortfolio() {
               <span className="text-[#c792ea]">const</span> <span className="text-[#d6deeb]">secret</span> = {"{"}
               <br />
               &nbsp;&nbsp;<span className="text-[#ecc48d]">"message"</span>:{" "}
-              <span className="text-[#ecc48d]">"message": "I put way too much effort into this portfolio 😅"</span>,
+              <span className="text-[#ecc48d]">"I put way too much effort into this portfolio 😅"</span>,
               <br />
               &nbsp;&nbsp;<span className="text-[#ecc48d]">"hidden_skill"</span>:{" "}
               <span className="text-[#ecc48d]">"Easter egg implementation"</span>,
