@@ -536,12 +536,8 @@ const experience = [
   }
 ];
 
-experience.forEach(({ role, company, dates, highlights }) => {
-  console.log("\\n" + role + " — " + company + " (" + dates + ")");
-  highlights.forEach(highlight => console.log("   • " + highlight));
-});
-
-"Experience loaded — five roles across design, AI, frontend, and client-facing work.";`
+// Experience loaded — five roles across design, AI, frontend, and client-facing work.
+experience;`
 
       default:
         return `// Welcome to Hanan's Interactive Portfolio
