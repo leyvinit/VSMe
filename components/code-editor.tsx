@@ -48,9 +48,9 @@ name: "Hanan Abdullahi",
 title: "Software Engineering Student",
 location: "Istanbul, Turkey",
 university: "Haliç University",
-graduation: "May 2026",
+graduation: "2026 — final semester in progress",
 
-languages: ["English", "Arabic", "Somali"],
+languages: ["English", "Arabic", "Turkish", "Somali", "Korean", "Japanese", "Amharic"],
 
 personality: {
   traits: ["Problem solver", "Team player", "Quick learner"],
@@ -374,19 +374,19 @@ displaySkillsAssessment();`
 const contactInfo = {
 personal: {
   name: "Hanan Abdullahi",
-  email: "nakohoka25@gmail.com",
-  phone: "+90 538 522 0604",
+  email: "hannansalahbts0099@gmail.com",
+  phone: "+90 536 390 2437",
   location: {
-    city: "Başakşehir",
+    city: "Istanbul",
     province: "Istanbul",
-    country: "Turkey",
+    country: "Türkiye",
     timezone: "Turkey Time (TRT, UTC+3)"
   }
 },
 
 professional: {
   linkedIn: {
-    url: "https://linkedin.com/in/hananabdulahi",
+    url: "https://linkedin.com/in/han-has",
     description: "Professional network and career updates"
   },
   github: {
@@ -491,6 +491,54 @@ return "Contact information loaded! Ready to connect! 📞";
 
 displayContactInfo();`
 
+      case "experience.js":
+        return `// Professional Experience
+const experience = [
+  {
+    role: "UX/UI Designer Intern",
+    company: "BlueSense AI",
+    dates: "August 2025 – October 2025",
+    highlights: [
+      "Enhanced UI designs for visual clarity and user experience",
+      "Refined layouts, color schemes, and typography for usability",
+      "Followed brand guidelines and existing design systems",
+      "Designed and refined interface components in Figma"
+    ]
+  },
+  {
+    role: "AI & Cybersecurity Intern",
+    company: "EARTech IT",
+    dates: "August 2025 – September 2025",
+    highlights: [
+      "Built Laravel applications with dynamic filtering and access control",
+      "Designed Figma login and sign-up interfaces and implemented responsive Bootstrap UI",
+      "Used Microsoft Azure to host the project and manage application data",
+      "Modified databases and wrote SQL queries, including data seeding"
+    ]
+  },
+  {
+    role: "ML Intern",
+    company: "FlyRank",
+    dates: "Date to confirm",
+    highlights: ["Gained hands-on experience with machine-learning concepts and workflows", "Contributed to ML-related team tasks and projects"]
+  },
+  {
+    role: "Frontend Developer",
+    company: "Dalson",
+    dates: "June 2024 – July 2024",
+    highlights: ["Developed and maintained internal web pages", "Improved usability, visual quality, and user experience with the team"]
+  },
+  {
+    role: "Conversion Agent",
+    company: "Axia Investment",
+    dates: "Date to confirm",
+    highlights: ["Explained services clearly to prospective clients", "Handled questions and objections through active listening and persuasion", "Worked toward conversion and business targets in a fast-paced environment"]
+  }
+];
+
+// Experience loaded — five roles across design, AI, frontend, and client-facing work.
+experience;`
+
       default:
         return `// Welcome to Hanan's Interactive Portfolio
 //
@@ -560,7 +608,11 @@ displayWelcome();`
           "🗣️ Languages I speak:",
           "   • English",
           "   • Arabic",
+          "   • Turkish",
           "   • Somali",
+          "   • Korean",
+          "   • Japanese",
+          "   • Amharic",
           "",
           "✨ Personality & Work Style:",
           "   • Problem solver",
