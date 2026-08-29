@@ -22,7 +22,7 @@ export function Sidebar({
 }: SidebarProps) {
   const [isExpanded, setIsExpanded] = useState(true)
 
-  const files = ["about-me.js", "projects.js", "skills.js", "contact.js"]
+  const files = ["about-me.js", "experience.js", "projects.js", "skills.js", "contact.js"]
 
   return (
     <div className="w-64 bg-[#011627] border-r border-[#1e2d3d] flex flex-col text-sm">

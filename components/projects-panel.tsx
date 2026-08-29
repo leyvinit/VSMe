@@ -118,6 +118,86 @@ export function ProjectsPanel() {
       challenges: "Learning software analysis methodologies and translating requirements into design",
       icon: "🚗",
     },
+    {
+      id: 6,
+      name: "MAPE-K Self-Healing Microservice Orchestrator",
+      category: "Machine Learning & Cloud",
+      description: "Graduation project for autonomous fault detection and recovery in Kubernetes microservices",
+      longDescription: "A self-healing microservice orchestrator built around the MAPE-K control loop. It monitors Kubernetes metrics with Prometheus, visualizes them in Grafana, detects anomalies, and executes confirmed recovery actions against Minikube workloads.",
+      skills: ["Python", "Docker", "Kubernetes", "Machine Learning", "Prometheus", "Grafana"],
+      techStack: ["Python", "Docker", "Kubernetes", "Minikube", "kubectl", "Helm", "Prometheus", "Grafana"],
+      demoUrl: null,
+      githubUrl: null,
+      status: "In Progress",
+      learningFocus: "Graduation project exploring autonomous systems, anomaly detection, and cloud-native recovery",
+      features: ["CPU and memory monitoring", "Anomaly detection with a 0.15 threshold", "Automated pod recovery", "Fault injection testing"],
+      challenges: "Designing reliable recovery workflows that respond safely to real-time infrastructure faults",
+      icon: "⚙️",
+    },
+    {
+      id: 7,
+      name: "Bookstore Web Application",
+      category: "Full-Stack Development",
+      description: "Dynamic bookstore application with browsing, search, cart, and authentication",
+      longDescription: "A university full-stack project combining an HTML, CSS, and JavaScript frontend with a PHP backend, API-powered book data, MySQL storage, authentication, and a responsive shopping experience.",
+      skills: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "API Integration"],
+      techStack: ["HTML", "CSS", "JavaScript", "PHP", "APIs", "MySQL"],
+      demoUrl: null,
+      githubUrl: null,
+      status: "Completed",
+      learningFocus: "Building a complete full-stack workflow from interface to database",
+      features: ["Book browsing and search", "Shopping cart", "User authentication", "API integration"],
+      challenges: "Connecting frontend interactions to server-side logic and persistent data",
+      icon: "📚",
+    },
+    {
+      id: 8,
+      name: "Lockin Habit Tracker",
+      category: "UX/UI Design",
+      description: "Team habit-tracking application designed in Figma",
+      longDescription: "A collaborative UX/UI project focused on the structure, visual language, and usability of a habit-tracking experience. Designed interface flows and components in Figma with teammates.",
+      skills: ["Figma", "UX/UI Design", "Responsive Design", "Teamwork"],
+      techStack: ["Figma", "UX/UI Design", "Design Systems"],
+      demoUrl: null,
+      githubUrl: null,
+      status: "Team Project",
+      learningFocus: "Practicing collaborative product design and usability decisions",
+      features: ["Habit tracking flows", "Interface structure", "Visual design system", "Team collaboration"],
+      challenges: "Balancing individual design ideas with a consistent, usable team product",
+      icon: "🎯",
+    },
+    {
+      id: 9,
+      name: "Microservices Modifiability Prediction",
+      category: "Machine Learning & AI",
+      description: "ML and deep-learning research project predicting microservice modifiability",
+      longDescription: "A university project investigating machine learning and deep learning approaches to predict and classify how modifiable microservices are.",
+      skills: ["Python", "Machine Learning", "Deep Learning", "Classification"],
+      techStack: ["Python", "Machine Learning", "Deep Learning"],
+      demoUrl: null,
+      githubUrl: null,
+      status: "University Project",
+      learningFocus: "Applying model development and classification techniques to software systems",
+      features: ["Feature analysis", "Model development", "Modifiability prediction", "Classification experiments"],
+      challenges: "Translating software quality characteristics into useful machine-learning features",
+      icon: "🧠",
+    },
+    {
+      id: 10,
+      name: "Voice Analysis System",
+      category: "Machine Learning & AI",
+      description: "Machine-learning project using WAV audio and a custom voice dataset",
+      longDescription: "A personal project applying machine-learning techniques to a custom dataset of voice recordings, exploring how audio data can be prepared and analyzed for model development.",
+      skills: ["Python", "Machine Learning", "Data Analysis"],
+      techStack: ["Python", "WAV Audio", "Machine Learning"],
+      demoUrl: null,
+      githubUrl: null,
+      status: "Personal Project",
+      learningFocus: "Working with custom datasets and audio-focused ML workflows",
+      features: ["WAV audio processing", "Custom dataset preparation", "Voice feature analysis", "Model experimentation"],
+      challenges: "Preparing real-world voice recordings into a consistent dataset for analysis",
+      icon: "🎙️",
+    },
   ]
 
   const categories = [
@@ -127,6 +207,10 @@ export function ProjectsPanel() {
     "API Integration",
     "Fundamentals",
     "System Design",
+    "Machine Learning & Cloud",
+    "Full-Stack Development",
+    "UX/UI Design",
+    "Machine Learning & AI",
   ]
   const [activeCategory, setActiveCategory] = useState("All")
 
@@ -412,7 +496,7 @@ export function ProjectsPanel() {
           <span className="text-2xl">🚀</span>
           <div>
             <h1 className="text-xl font-semibold text-[#d6deeb]">Projects Showcase</h1>
-            <p className="text-[#8892b0] text-sm">Early learning projects that shaped my development journey</p>
+            <p className="text-[#8892b0] text-sm">Academic, professional, and personal work across software, design, and AI</p>
           </div>
         </div>
 
